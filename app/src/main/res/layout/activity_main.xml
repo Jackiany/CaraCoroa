@@ -4,15 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#61BD8C"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/logo" />
 
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="282dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="#65BC8D"
+        android:drawableBottom="@drawable/botao_jogar"
+        app:backgroundTint="#65BC8D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
